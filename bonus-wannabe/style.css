@@ -88,6 +88,7 @@ img {
     background-color: #041630;
   }
 
+
   /* blocco lezioni e steps posti in verticale */
 
   #lezioni .row > .left,
@@ -99,11 +100,12 @@ img {
     margin-bottom: 20px;
   }
 
-/* ridimensionamento row per centrare il testo */
+/* ridimensionamento row per centrare il testo*/
 
   .row {
-    max-width: 350px;
+    max-width: 100%;
     margin-top: 5px;
+    padding-right: 15px;
   }
 
 /* ridimensionamento di tutti gli h1 e h3 */
@@ -152,11 +154,8 @@ img {
     min-width: 420px;
   }
 
+/*trasformo il container grigio in un gradient blu */
   .container.grey {
-    background-color: none;
-  }
-
-  .container.blue {
     background-image: radial-gradient(#041630, #1A3481, #041630);
     border-radius: 250px;
     box-shadow: 1px 1px 1px #444;
@@ -168,18 +167,39 @@ img {
 
 @media screen and (max-width: 768px) and (min-width: 421px){
 
+  body {
+    background-image: linear-gradient( #0F2C5D, #406EA3, #71AA9E);
+    color: #fff;
+  }
+
+/* contenitore con titolo "cerca" si posiziona centralmente */
     #steps .row > .left {
       width: 100%;
     }
-
+/* i contenitori "contatta" e "inizia a suonare" si spostano sotto "cerca" */
     #steps .row > .central,
     #steps .row > .right {
       width:50%;
+      margin-top: 35px;
     }
 
-    .container {    /* dando min-width al container non si rompe se si scende sotto ai 420px*/
+/* resize margini hr nella sezione con id "why" */
+    #why > .row  hr {
+      margin-top: 18px;
+      margin-bottom: 25px;
+    }
+
+    .container.grey{      /*modifica del colore del container gray a green */
+      background-color: rgba(96, 205, 120, 0.2);
+      padding:5px;
+    }
+    /* definisco la dimensione delle row per permettere al background container di coprire tutta la larghezza stabilita */
+    .row {
+      max-width: 100%;
+      padding-right: 10px;
+    }
+    .container {
       min-width: 768px;
     }
-
 
 }
