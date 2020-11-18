@@ -148,8 +148,8 @@ img {
     opacity: 0.6;
   }
 
-  .container {    /* dando min-width al container non si rompe se si scende sotto ai 350px*/
-    min-width: 350px;
+  .container {    /* dando min-width al container non si rompe se si scende sotto ai 420px*/
+    min-width: 420px;
   }
 
   .container.grey {
@@ -167,7 +167,19 @@ img {
 /* media query tablet version */
 
 @media screen and (max-width: 768px) and (min-width: 421px){
-  body {
-    background-color: #63D581;
-  }
+
+    #steps .row > .left {
+      width: 100%;
+    }
+
+    #steps .row > .central,
+    #steps .row > .right {
+      width:50%;
+    }
+
+    .container {    /* dando min-width al container non si rompe se si scende sotto ai 420px*/
+      min-width: 768px;
+    }
+
+
 }
