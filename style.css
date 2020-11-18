@@ -71,3 +71,35 @@ img {
 .clear {
   clear: both;
 }
+
+/* media query */
+
+@media screen and (max-width: 420px){
+  body{
+    font-size: 10px;
+  }
+  #lezioni .row>.left,
+  #lezioni .row>.right,
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: 100%;
+  }
+
+  .row {
+    max-width: 350px;
+    margin-top: 5px;
+  }
+
+  #lezioni h1,
+  #steps h1,
+  #why h1 {
+    font-size: 22px;
+  }
+
+  #lezioni h3,
+  #steps h3,
+  #why h3 {
+    font-size: 12px;
+  }
+}
