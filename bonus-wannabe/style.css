@@ -1,0 +1,142 @@
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row>.left,
+#lezioni .row>.right {
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px
+}
+
+/* COMMON */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 200px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* media query */
+
+@media screen and (max-width: 420px) {
+
+  /* ridimensionamento font generale */
+
+  body {
+    font-size: 10px;
+  }
+
+  /* blocco lezioni e steps posti in verticale */
+
+  #lezioni .row > .left,
+  #lezioni .row > .right,
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+/* ridimensionamento row per centrare il testo */
+
+  .row {
+    max-width: 350px;
+    margin-top: 5px;
+  }
+  
+/* ridimensionamento di tutti gli h1 e h3 */
+
+  #lezioni h1,
+  #steps h1,
+  #why h1 {
+    font-size: 22px;
+  }
+
+  #lezioni h3,
+  #steps h3,
+  #why h3 {
+    font-size: 12px;
+  }
+/* ridimensionamento delle img */
+
+  img {
+    height: 100px;
+  }
+/* modifica del margin nel blocco perchè */
+
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third {
+    margin-top: 15px;
+  }
+
+  /* ridimensionamento img del blocco perche */
+
+  #why .row img {
+    height: 50px;
+    border-radius: 50%;
+    padding: 20px
+  }
+
+  #why > .row  hr {
+    margin-top: 8px;
+    margin-bottom: 25px;
+  }
+
+}
