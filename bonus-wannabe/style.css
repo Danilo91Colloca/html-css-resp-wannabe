@@ -1,3 +1,6 @@
+
+/* CSS BONUS */
+
 .row {
   width: 992px;
   margin-left: auto;
@@ -64,6 +67,7 @@
   background-color: #f9f9f9;
 }
 
+
 img {
   height: 200px;
 }
@@ -80,6 +84,8 @@ img {
 
   body {
     font-size: 10px;
+    color: #e7e7e0;
+    background-color: #0984d7;
   }
 
   /* blocco lezioni e steps posti in verticale */
@@ -99,7 +105,7 @@ img {
     max-width: 350px;
     margin-top: 5px;
   }
-  
+
 /* ridimensionamento di tutti gli h1 e h3 */
 
   #lezioni h1,
@@ -137,6 +143,21 @@ img {
   #why > .row  hr {
     margin-top: 8px;
     margin-bottom: 25px;
+    border: 0.1px solid transparent;
+    background-color: #008fff;
+    opacity: 0.6;
+  }
+
+  .container{    /* dando min-width al container non si rompe se si scende sotto ai 350px*/
+    min-width: 350px;
+  }
+
+  .container.grey {
+    background-color: none;
+  }
+
+  .container.blue {
+    background-image: radial-gradient(#ccd2d6, #0984d7, #005791 );
   }
 
 }
