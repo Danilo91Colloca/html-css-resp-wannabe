@@ -76,7 +76,7 @@ img {
   clear: both;
 }
 
-/* media query */
+/* media query per mobile di piccole dimensioni*/
 
 @media screen and (max-width: 420px) {
 
@@ -84,8 +84,8 @@ img {
 
   body {
     font-size: 10px;
-    color: #e7e7e0;
-    background-color: #0984d7;
+    color: #468dd6;
+    background-color: #041630;
   }
 
   /* blocco lezioni e steps posti in verticale */
@@ -148,7 +148,7 @@ img {
     opacity: 0.6;
   }
 
-  .container{    /* dando min-width al container non si rompe se si scende sotto ai 350px*/
+  .container {    /* dando min-width al container non si rompe se si scende sotto ai 350px*/
     min-width: 350px;
   }
 
@@ -157,7 +157,17 @@ img {
   }
 
   .container.blue {
-    background-image: radial-gradient(#ccd2d6, #0984d7, #005791 );
+    background-image: radial-gradient(#041630, #1A3481, #041630);
+    border-radius: 250px;
+    box-shadow: 1px 1px 1px #444;
   }
 
+}
+
+/* media query tablet version */
+
+@media screen and (max-width: 768px) and (min-width: 421px){
+  body {
+    background-color: #63D581;
+  }
 }
