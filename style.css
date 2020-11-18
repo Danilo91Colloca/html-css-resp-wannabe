@@ -75,22 +75,30 @@ img {
 /* media query */
 
 @media screen and (max-width: 420px){
+
+  /* ridimensionamento font generale */
+
   body{
     font-size: 10px;
   }
+
+  /* blocco lezioni e steps posti in verticale */
+
   #lezioni .row>.left,
   #lezioni .row>.right,
   #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right {
     width: 100%;
+    margin-bottom: 20px;
   }
 
+/* ridimensionamento row per centrare il testo */
   .row {
     max-width: 350px;
     margin-top: 5px;
   }
-
+/* ridimensionamento di tutti gli h1 e h3 */
   #lezioni h1,
   #steps h1,
   #why h1 {
@@ -102,4 +110,22 @@ img {
   #why h3 {
     font-size: 12px;
   }
+/* ridimensionamento delle img */
+  img {
+    height: 100px;
+  }
+/* modifica del margin nel blocco perchè */
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin-top: 40px;
+  }
+  /* ridimensionamento img del blocco perche */
+  #why .row img {
+    height: 50px;
+    border-radius: 50%;
+    padding: 20px
+  }
+
+
 }
